@@ -11,10 +11,16 @@
 #
 
 # Modify default IP
-#sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.10.12/g' package/base-files/files/bin/config_generate
 
 # Modify default theme
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
+# 取消 Lean 大登陆密码
+sed -i 's/^\(.*99999\)/#&/' package/lean/default-settings/files/zzz-default-settings
+
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
+
+# Modify system hostname（FROM OpenWrt CHANGE TO OpenWrt-Bu）
+sed -i "s/OpenWrt/OpenWrt by Bu $(TZ=UTC-8 date "+%y.%m.%d") @/g" package/lean/default-settings/files/zzz-default-settings
