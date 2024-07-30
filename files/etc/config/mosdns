@@ -1,6 +1,5 @@
 
 config mosdns 'config'
-	option enabled '0'
 	option listen_port '5335'
 	option geo_auto_update '0'
 	option geo_update_week_time '*'
@@ -34,4 +33,5 @@ config mosdns 'config'
 	option adblock '1'
 	list ad_source 'https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt'
 	list ad_source 'geosite.dat'
+	option enabled '1'
 
