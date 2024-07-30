@@ -62,3 +62,21 @@ config socks5_proxy
 config server_global
 	option enable_server '0'
 
+config servers
+	option switch_enable '0'
+	option type 'v2ray'
+	option alias 'so'
+	option v2ray_protocol 'vless'
+	option server 'so'
+	option server_port '443'
+	option vmess_id 'bc353206-bac2-4b49-8dac-f8b576e9669d'
+	option vless_encryption 'none'
+	option transport 'ws'
+	option ws_path '/Fxsdss2024'
+	option tls '1'
+	option fingerprint 'edge'
+	option insecure '0'
+	option mux '0'
+	option mptcp '0'
+	option local_port '1234'
+
