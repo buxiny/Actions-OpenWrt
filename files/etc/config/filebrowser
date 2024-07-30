@@ -5,7 +5,7 @@ config global
 	option username 'admin'
 	option port '5012'
 	option root_path '/'
-	option enable '0'
 	option password 'admin'
 	option executable_directory '/bin'
+	option enable '1'
 
