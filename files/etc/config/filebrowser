@@ -1,0 +1,11 @@
+
+config global
+	option address '0.0.0.0'
+	option database '/etc/filebrowser.db'
+	option username 'admin'
+	option port '5012'
+	option root_path '/'
+	option enable '0'
+	option password 'admin'
+	option executable_directory '/bin'
+
