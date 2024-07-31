@@ -6,6 +6,6 @@ config global
 	option port '5012'
 	option root_path '/'
 	option password 'admin'
-	option executable_directory '/bin'
+	option executable_directory '/usr/bin'
 	option enable '1'
 
