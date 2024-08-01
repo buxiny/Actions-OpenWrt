@@ -27,3 +27,4 @@ sed -i "s/OpenWrt/OpenWrt by Bu $(TZ=UTC-8 date "+%y.%m.%d") @/g" package/lean/d
 
 # 增加独立插件
 git clone https://github.com/xiaoqingfengATGH/p7zip-gcc17.git package/p7zip
+git clone https://github.com/xiaozhuai/luci-app-filebrowser package/luci-app-filebrowser
