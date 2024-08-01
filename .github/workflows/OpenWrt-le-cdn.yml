@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: OpenWrt-le-kenzok8
+name: OpenWrt-le-cdn
 
 on:
   repository_dispatch:
@@ -20,9 +20,9 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: kenzok8.config
-  DIY_P1_SH: le-1-kenzok8.sh
-  DIY_P2_SH: le-2-kenzok8.sh
+  CONFIG_FILE: cdn.config
+  DIY_P1_SH: le-1-cdn.sh
+  DIY_P2_SH: le-2-cdn.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
