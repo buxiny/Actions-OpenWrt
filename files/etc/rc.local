@@ -2,6 +2,8 @@
 # the system init finished. By default this file does nothing.
 # 追加定时任务
 cat << "EOF" >> /var/spool/cron/crontabs/root
+34 2 * * * /usr/share/mosdns/mosdns.sh geodata
+35 1 * * * /usr/share/shadowsocksr/ssrplusupdate.sh >/var/log/ssrplus.log
 45 0 * * 5 //root/wrt-backup.sh
 EOF
 # 覆盖软件源
