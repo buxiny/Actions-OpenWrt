@@ -36,7 +36,8 @@ rm -rf /www/backup/*
 /usr/share/passwall/rules/direct_ip \
 /usr/share/passwall/rules/direct_host
 
-#/www/mosdns/ \
-#/etc/ssh/sshd_config \
-
 # 7z x archives.7z -spf  解压到原路径
+
+# Cdnspeedtest
+cd /root/cloudflarespeedtest/
+./cfst_hosts.sh
