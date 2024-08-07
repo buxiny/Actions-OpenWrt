@@ -17,6 +17,7 @@ EOF
 #wget -N -P /etc http://192.168.10.2/openwrt/AdGuardHome.yaml
 wget -N -P /etc http://192.168.10.2/openwrt/dnsmasq.conf
 wget -N -P /etc/config http://192.168.10.2/openwrt/config/shadowsocksr
+wget -N -P /etc/config http://192.168.10.2/openwrt/config/mosdns
 wget -N -P /etc/mosdns/rule http://192.168.10.2/openwrt/mosdns/hosts.txt
 sleep 1
 # 重启服务
