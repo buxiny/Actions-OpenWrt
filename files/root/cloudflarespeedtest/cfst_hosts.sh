@@ -56,9 +56,8 @@ _UPDATE() {
 
 	echo -e "开始替换..."
 #	sed -i 's/'${NOWIP}'/'${BESTIP}'/g' /etc/hosts
-#	sed -i 's/'${NOWIP}'/'${BESTIP}'/g' /etc/mosdns/config.yaml
 #	sed -i 's/'${NOWIP}'/'${BESTIP}'/g' /mnt/docker/mosdns/rule/hosts.txt
-	sed -i 's/'${NOWIP}'/'${BESTIP}'/g' /etc/mosdns/config.yaml
+	sed -i 's/'${NOWIP}'/'${BESTIP}'/g' /etc/config/mosdns
 	mosdns service restart
 	echo -e "完成..."
 }
