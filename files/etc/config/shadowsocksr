@@ -34,8 +34,6 @@ config access_control
 	list wan_fw_ips '91.108.56.0/22'
 	list wan_fw_ips '109.239.140.0/24'
 	list Interface 'lan'
-	list wan_bp_ips '152.70.90.216'
-	list wan_bp_ips '130.162.141.100'
 	option lan_ac_mode 'w'
 	list lan_ac_ips '192.168.10.2'
 	list lan_ac_ips '192.168.10.10'
