@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # 新建backup文件夹
-mkdir -p /mnt/backup
-chmod 777 /mnt/backup
+#mkdir -p /mnt/backup
+#chmod 777 /mnt/backup
 
 # 覆盖keepalived.conf设置
 cat << "EOF" > /etc/keepalived/keepalived.conf
