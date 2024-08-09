@@ -20,15 +20,17 @@ EOF
 wget -N -P /etc/config http://192.168.10.2/openwrt/config/shadowsocksr
 wget -N -P /etc/config http://192.168.10.2/openwrt/config/mosdns
 wget -N -P /etc/mosdns/rule http://192.168.10.2/openwrt/mosdns/hosts.txt
-wget -N -P /etc http://192.168.10.2/openwrt/dnsmasq.conf
 sleep 1
 
 # 重启服务
 service cron restart
 /etc/init.d/shadowsocksr restart
 mosdns service restart
-/etc/init.d/dnsmasq restart
+sleep 3
+
+wget -N -P /etc http://192.168.10.2/openwrt/dnsmasq.conf
 sleep 1
+/etc/init.d/dnsmasq restart
 
 # 清空rc.local
 cat << "EOF" > /etc/rc.local
